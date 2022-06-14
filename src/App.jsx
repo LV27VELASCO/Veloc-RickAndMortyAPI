@@ -28,8 +28,8 @@ function App() {
         :
         <div className='ImgAndRick'>
           <ImgPortada/>
-          <div className='title'>
-          <h1 className='text'>Rick and Morty Wiky</h1>
+          <div className='contain-title'>
+          <h1 className='text'>Rick and Morty Wiky </h1>
           <InputControled inputt={inputt} setInputt={setInputt} setLocations={setLocations}/>
           </div>
           <div className='RickandCard'>
