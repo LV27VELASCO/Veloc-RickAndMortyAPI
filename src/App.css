@@ -1,0 +1,317 @@
+*{
+  box-sizing: border-box;
+  list-style: none;
+  color: white;
+  font-family: var(---Poppin);
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+:root{
+  ---cardBackground:#0f1216d9;
+  ---Poppin: 'Poppins', sans-serif;
+  ---Robboto:'Roboto Slab', serif;
+  ---Color-Subtitle:rgba(204, 208, 208, 0.872);
+  ---Withesmoke:rgb(251, 251, 251);
+  ---Withesmoke-Slow:#f3f3f3f7;
+  ---Size-title:1.45rem;
+  --Size-Subtitle:1.18rem;
+  ---P-list:1.08rem;
+  ---Size-small:0.85rem;
+  ---Size-mediun-small:0.9rem;
+}
+
+body{
+  background-image: url('./assets/img/firmamento.jpg');
+}
+
+.App{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+/* ------------------------------------------------*/
+
+/* PANTALLA DE CARGA*/
+
+.Load{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Load>h2{
+  color: black;
+  font-size: var(--Size-Subtitle);
+}
+
+/* ------------------------------------------------*/
+
+
+/* CONTENEDOR DE IMAGEN DE PORTADA, TITULO, RICK Y CARD (CONTENEDOR PADRE)*/
+
+.ImgAndRick{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.imgPortada{
+  width: 100%;
+  height: 300px;
+}
+
+.imgPortada>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:center;
+}
+
+.text{
+  width: 100%;
+  font-family: 'Chewy', cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgba(22, 81, 75, 0.424);
+  background-image: url('https://www.xtrafondos.com/wallpapers/paisaje-de-rick-y-morty-9415.jpg');
+  background-size: cover;
+  background-position: 0px 0px;
+  background-clip:text;
+  -webkit-background-clip: text;
+}
+
+
+/* ------------------------------------------------*/
+
+
+/* CONTENEDOR DE CONTENEDOR DE DESCRIPCION DE PLANETA Y CONTENEDOR DE CARTAS*/
+
+
+.RickandCard{
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ------------------------------------------------*/
+
+/* DESCRIPCION DE PLANETA*/
+
+.Planet{
+  width: 100%;
+  padding: 10px;
+  background-color:var(---cardBackground);
+  text-align: center;
+  border-radius: 7px;
+}
+
+/*nombre de planeta*/
+.namePlanet{
+  padding: 10px;
+}
+
+.namePlanet>h2{
+font-family: var(---Robboto);
+  font-size: var(---Size-title);}
+
+
+  /* datos de planeta*/
+.listdate{
+  display: flex;
+  justify-content: space-around;
+}
+
+.listdate>li>span{
+  font-size: var(--Size-Subtitle);
+  font-family: var(---Robboto);
+  color:var(---Color-Subtitle);
+  font-weight: 400;
+}
+
+.listdate>li>p{
+  font-size: var(---P-list);
+}
+
+
+/* ------------------------------------------------*/
+
+
+
+/* CONTENEDOR DE CARTAS*/
+.ContainCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  gap: 1.5rem;
+}
+
+/* CARTAS*/
+
+.Card{
+  width: 18em;
+  background-color:var(---cardBackground);
+  border-radius: 5px;
+  position: relative;
+}
+
+/* CONTENEDOR IMAGEN EN CARTA*/
+
+.container-image{
+  width: 100%;
+}
+
+/*imagen*/
+
+.container-image>img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px 5px 0 0;
+}
+
+/*------------------------------------*/
+
+/*CONTENEDOR DE DATOS DE CARTA*/
+
+.Datos{
+  padding:0px 10px;
+}
+
+/*datos de carta*/
+.name{
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid #1a1e23;
+}
+
+.name>h2{
+  font-family: var(---Robboto);
+  font-size: var(--Size-Subtitle);
+  font-weight: 400;
+  color: var(---Withesmokkee);
+}
+
+.descripcion{
+  padding: 10px;
+}
+
+
+.descripcionlist{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.descripcionlist>li>span{
+  color: var(---Color-Subtitle);
+  font-size: var(---Size-small);
+}
+
+.descripcionlist>li>p{
+  font-size: var(---Size-mediun-small);
+  color: var(---Withesmoke-Slow);
+}
+
+/*estado de personaje*/
+
+.estado{
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  height: 1.5rem;
+  background-color:var(---cardBackground);
+  border-radius: 0 7px 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.73);
+}
+
+.check{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.parrafo>p{
+  font-size: var(---Size-small);
+  padding: 0px 10px ;
+}
+
+
+input{
+  color: black;
+  background-color: rgba(39, 37, 37, 0.852);
+  width: 200px;
+  text-align: center;
+  height: 2rem;
+  border: none;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  -webkit-appearance:none;
+  margin:0;
+}
+
+
+form{
+display: flex;
+align-items: center;
+justify-content: center;}
+
+button{
+  width: 1.8rem;
+  height: 2.13rem;
+  background-color: gray;
+  cursor: pointer;
+}
+
+button>div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button i{
+  color: black;
+  font-size:1.3rem;
+}
+
+
+
+
+.footer{
+  background-color: rgba(0, 0, 0, 0.694);
+  font-family: var(---Robboto);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  position: sticky;
+  top:100%;
+}
+
+.contain-input{
+  text-align: center;
+  margin: 7px 0px;
+}
