@@ -14,8 +14,6 @@ function App() {
 
   const [inputt, setInputt] = useState()
 
- 
-
 
   const { locations,setLocations, load } = useLocation()
 
