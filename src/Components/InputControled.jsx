@@ -5,7 +5,7 @@ const InputControled = ({ inputt, setInputt, setLocations }) => {
 
   const Buscar = e => { 
     if(e.target.value==''){
-      return setInputt({})
+      return setInputt()
     }
     else{return setInputt(e.target.value)}
   }
