@@ -86,7 +86,7 @@ body{
   font-family: 'Chewy', cursive;
   font-size: var(---Title-principal);
   font-weight: bold;
-  color: rgba(22, 81, 75, 0.424);
+  color: rgba(87, 154, 143, 0.514);
   background-image: url('assets/img/paisaje-de-rick-y-morty-9415.jpg');
   background-size: cover;
   background-position: 10px 0px;
@@ -345,7 +345,7 @@ font-family: var(---Robboto);
   ---P-list:0.97rem;
   ---Size-small:0.84rem;
   ---Size-mediun-small:0.8rem;
-  ---Title-principal:3rem;
+  ---Title-principal:3.3rem;
   }
 
   .imgPortada{
