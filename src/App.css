@@ -357,4 +357,8 @@ font-family: var(---Robboto);
   .Card{
     width: 10em;
   }
+
+  .estado{
+    top: 0.80rem;
+  }
 }
