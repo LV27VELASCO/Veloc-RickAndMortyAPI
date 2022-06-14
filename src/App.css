@@ -21,6 +21,7 @@
   ---P-list:1.08rem;
   ---Size-small:0.85rem;
   ---Size-mediun-small:0.9rem;
+  ---Title-principal:3.5rem;
 }
 
 body{
@@ -83,7 +84,7 @@ body{
 .text{
   width: 100%;
   font-family: 'Chewy', cursive;
-  font-size: 3.5rem;
+  font-size: var(---Title-principal);
   font-weight: bold;
   color: rgba(22, 81, 75, 0.424);
   background-image: url('assets/img/paisaje-de-rick-y-morty-9415.jpg');
@@ -344,6 +345,7 @@ font-family: var(---Robboto);
   ---P-list:0.97rem;
   ---Size-small:0.84rem;
   ---Size-mediun-small:0.8rem;
+  ---Title-principal:3rem;
   }
 
   .imgPortada{
