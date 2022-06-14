@@ -86,9 +86,9 @@ body{
   font-size: 3.5rem;
   font-weight: bold;
   color: rgba(22, 81, 75, 0.424);
-  background-image: url('https://www.xtrafondos.com/wallpapers/paisaje-de-rick-y-morty-9415.jpg');
+  background-image: url('assets/img/paisaje-de-rick-y-morty-9415.jpg');
   background-size: cover;
-  background-position: 0px 0px;
+  background-position: 10px 0px;
   background-clip:text;
   -webkit-background-clip: text;
 }
@@ -334,4 +334,25 @@ font-family: var(---Robboto);
 .contain-input{
   text-align: center;
   margin: 7px 0px;
+}
+
+@media screen and (max-width:470px) {
+  
+  :root{
+  ---Size-title:1.35rem;
+  --Size-Subtitle:1.1rem;
+  ---P-list:0.97rem;
+  ---Size-small:0.84rem;
+  ---Size-mediun-small:0.8rem;
+  }
+
+  .imgPortada{
+    width: 100%;
+    height: 220px;
+  }
+
+
+  .Card{
+    width: 10em;
+  }
 }
